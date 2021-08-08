@@ -21,10 +21,15 @@ function App() {
       fetchPosts();
    }, [])
 
+   // Get current Posts
+   const indexOfLastPost = currentPage * postsPerPage;
+   const indexOfFirstPost = indexOfLastPost - postsPerPage;
+   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost)
+
    return (
-      <div className="container mt-5">
-         <h1 className="text-danger mb-3">My BLog</h1>
-         <Posts loading={loading} posts={posts} />
+      <div className="container mt-4">
+         <h1 className="text-danger text-center mb-3">My Posts</h1>
+         <Posts loading={loading} posts={currentPosts} />
       </div>
    );
 }
