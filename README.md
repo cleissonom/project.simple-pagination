@@ -12,6 +12,7 @@ This project was developed with the following technologies:
 
 - [CRA](https://create-react-app.dev)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Axios](https://www.npmjs.com/package/axios)
 
 
 ## 💻 Project
